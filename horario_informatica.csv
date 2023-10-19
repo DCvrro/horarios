@@ -1,0 +1,59 @@
+Curso,Aula,Horario Catedra,Horario Ayudantia
+Informatica3,102,"Jueves 10:00 AM - 11:20 AM, Lunes 8:30 AM - 9:50 AM",Jueves 8:30 AM - 9:50 AM
+Informatica3,312,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica12,311,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica12,104,"Jueves 10:00 AM - 11:20 AM, Miércoles 10:00 AM - 11:20 AM",Lunes 10:00 AM - 11:20 AM
+Informatica12,104,"Lunes 8:30 AM - 9:50 AM, Viernes 10:00 AM - 11:20 AM",Jueves 10:00 AM - 11:20 AM
+Informatica16,102,"Martes 8:30 AM - 9:50 AM, Martes 10:00 AM - 11:20 AM",Viernes 10:00 AM - 11:20 AM
+Informatica16,315,"Miércoles 10:00 AM - 11:20 AM, Jueves 8:30 AM - 9:50 AM",Jueves 8:30 AM - 9:50 AM
+Informatica16,311,"Jueves 8:30 AM - 9:50 AM, Miércoles 8:30 AM - 9:50 AM",Lunes 8:30 AM - 9:50 AM
+Informatica4,104,"Miércoles 8:30 AM - 9:50 AM, Miércoles 10:00 AM - 11:20 AM",Martes 10:00 AM - 11:20 AM
+Informatica4,103,"Viernes 10:00 AM - 11:20 AM, Jueves 8:30 AM - 9:50 AM",Martes 8:30 AM - 9:50 AM
+Informatica4,101,"Lunes 10:00 AM - 11:20 AM, Martes 8:30 AM - 9:50 AM",Lunes 10:00 AM - 11:20 AM
+Informatica4,311,"Viernes 8:30 AM - 9:50 AM, Lunes 10:00 AM - 11:20 AM",Jueves 8:30 AM - 9:50 AM
+Informatica17,103,"Miércoles 8:30 AM - 9:50 AM, Jueves 8:30 AM - 9:50 AM",Viernes 10:00 AM - 11:20 AM
+Informatica17,103,"Viernes 8:30 AM - 9:50 AM, Lunes 10:00 AM - 11:20 AM",Martes 8:30 AM - 9:50 AM
+Informatica17,104,"Miércoles 10:00 AM - 11:20 AM, Miércoles 8:30 AM - 9:50 AM",Viernes 8:30 AM - 9:50 AM
+Informatica17,102,"Lunes 8:30 AM - 9:50 AM, Viernes 10:00 AM - 11:20 AM",Martes 8:30 AM - 9:50 AM
+Informatica1,312,"Miércoles 10:00 AM - 11:20 AM, Miércoles 8:30 AM - 9:50 AM",Viernes 10:00 AM - 11:20 AM
+Informatica1,104,"Martes 10:00 AM - 11:20 AM, Martes 8:30 AM - 9:50 AM",Lunes 8:30 AM - 9:50 AM
+Informatica1,312,"Lunes 10:00 AM - 11:20 AM, Jueves 8:30 AM - 9:50 AM",Martes 8:30 AM - 9:50 AM
+Informatica15,101,"Martes 8:30 AM - 9:50 AM, Viernes 10:00 AM - 11:20 AM",Viernes 10:00 AM - 11:20 AM
+Informatica15,314,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica6,105,"Lunes 10:00 AM - 11:20 AM, Viernes 10:00 AM - 11:20 AM",Viernes 10:00 AM - 11:20 AM
+Informatica6,104,"Lunes 10:00 AM - 11:20 AM, Viernes 8:30 AM - 9:50 AM",Lunes 8:30 AM - 9:50 AM
+Informatica6,311,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica2,104,"Viernes 10:00 AM - 11:20 AM, Jueves 10:00 AM - 11:20 AM",Martes 10:00 AM - 11:20 AM
+Informatica2,102,"Jueves 8:30 AM - 9:50 AM, Martes 10:00 AM - 11:20 AM",Lunes 8:30 AM - 9:50 AM
+Informatica8,312,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica8,103,"Martes 8:30 AM - 9:50 AM, Jueves 10:00 AM - 11:20 AM",Martes 10:00 AM - 11:20 AM
+Informatica8,312,"Martes 10:00 AM - 11:20 AM, Martes 8:30 AM - 9:50 AM",Martes 8:30 AM - 9:50 AM
+Informatica8,313,"Jueves 10:00 AM - 11:20 AM, Martes 8:30 AM - 9:50 AM",Viernes 8:30 AM - 9:50 AM
+Informatica20,103,"Miércoles 10:00 AM - 11:20 AM, Lunes 8:30 AM - 9:50 AM",Viernes 8:30 AM - 9:50 AM
+Informatica20,313,"Jueves 8:30 AM - 9:50 AM, Martes 8:30 AM - 9:50 AM",Jueves 10:00 AM - 11:20 AM
+Informatica7,314,"Martes 8:30 AM - 9:50 AM, Viernes 10:00 AM - 11:20 AM",Jueves 10:00 AM - 11:20 AM
+Informatica7,311,"Viernes 10:00 AM - 11:20 AM, Jueves 10:00 AM - 11:20 AM",Viernes 10:00 AM - 11:20 AM
+Informatica7,102,"Martes 10:00 AM - 11:20 AM, Viernes 8:30 AM - 9:50 AM",Viernes 8:30 AM - 9:50 AM
+Informatica19,313,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica19,102,"Viernes 8:30 AM - 9:50 AM, Viernes 10:00 AM - 11:20 AM",Jueves 10:00 AM - 11:20 AM
+Informatica5,103,"Viernes 8:30 AM - 9:50 AM, Martes 8:30 AM - 9:50 AM",Martes 8:30 AM - 9:50 AM
+Informatica5,311,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica5,102,"Miércoles 10:00 AM - 11:20 AM, Martes 10:00 AM - 11:20 AM",Lunes 8:30 AM - 9:50 AM
+Informatica18,105,"Martes 10:00 AM - 11:20 AM, Miércoles 10:00 AM - 11:20 AM",Viernes 8:30 AM - 9:50 AM
+Informatica18,313,"Miércoles 10:00 AM - 11:20 AM, Miércoles 8:30 AM - 9:50 AM",Martes 10:00 AM - 11:20 AM
+Informatica18,315,"Miércoles 10:00 AM - 11:20 AM, Lunes 8:30 AM - 9:50 AM",Lunes 10:00 AM - 11:20 AM
+Informatica9,105,"Lunes 10:00 AM - 11:20 AM, Martes 10:00 AM - 11:20 AM",Martes 8:30 AM - 9:50 AM
+Informatica9,102,"Jueves 10:00 AM - 11:20 AM, Miércoles 8:30 AM - 9:50 AM",Viernes 10:00 AM - 11:20 AM
+Informatica9,104,"Viernes 10:00 AM - 11:20 AM, Martes 10:00 AM - 11:20 AM",Jueves 10:00 AM - 11:20 AM
+Informatica9,103,"Lunes 10:00 AM - 11:20 AM, Miércoles 8:30 AM - 9:50 AM",Lunes 10:00 AM - 11:20 AM
+Informatica10,311,"Jueves 8:30 AM - 9:50 AM, Lunes 8:30 AM - 9:50 AM",Martes 10:00 AM - 11:20 AM
+Informatica10,315,"Martes 10:00 AM - 11:20 AM, Jueves 10:00 AM - 11:20 AM",Jueves 8:30 AM - 9:50 AM
+Informatica10,314,"Lunes 8:30 AM - 9:50 AM, Miércoles 8:30 AM - 9:50 AM",Martes 10:00 AM - 11:20 AM
+Informatica11,314,"Viernes 10:00 AM - 11:20 AM, Jueves 8:30 AM - 9:50 AM",Lunes 8:30 AM - 9:50 AM
+Informatica11,103,"Miércoles 10:00 AM - 11:20 AM, Lunes 10:00 AM - 11:20 AM",Jueves 10:00 AM - 11:20 AM
+Informatica13,311,"Lunes 10:00 AM - 11:20 AM, Miércoles 8:30 AM - 9:50 AM",Viernes 8:30 AM - 9:50 AM
+Informatica13,312,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica14,312,"Lunes 8:30 AM - 9:50 AM, Jueves 10:00 AM - 11:20 AM",Lunes 8:30 AM - 9:50 AM
+Informatica14,314,"Lunes 8:30 AM - 9:50 AM, Martes 10:00 AM - 11:20 AM",Jueves 8:30 AM - 9:50 AM
+Informatica14,104,Miércoles 11:30 AM - 12:50 PM,Miércoles 11:30 AM - 12:50 PM
+Informatica14,101,"Jueves 8:30 AM - 9:50 AM, Lunes 10:00 AM - 11:20 AM",Martes 8:30 AM - 9:50 AM

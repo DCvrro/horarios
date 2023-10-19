@@ -1,0 +1,647 @@
+[
+    {
+        "nombre": "Programaci\u00f3n I",
+        "secciones": [
+            1,
+            2
+        ],
+        "Secci\u00f3n 1": {
+            "alumnos": 33,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "L",
+                        "M",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "M",
+                        "J",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "J",
+                        "X",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "L",
+                        "J",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "J",
+                        "L",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "J",
+                        "L",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "J",
+                        "L",
+                        "X"
+                    ]
+                }
+            ]
+        },
+        "Secci\u00f3n 2": {
+            "alumnos": 39,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "J",
+                        "M",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "V",
+                        "X",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "X",
+                        "V",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "M",
+                        "X",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "X",
+                        "V",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "X",
+                        "V",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "X",
+                        "V",
+                        "J"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "nombre": "Estructuras de Datos",
+        "secciones": [
+            1,
+            2
+        ],
+        "Secci\u00f3n 1": {
+            "alumnos": 34,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "M",
+                        "L",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "X",
+                        "J",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "M",
+                        "V",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "L",
+                        "V",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "M",
+                        "J",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "V",
+                        "M",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "L",
+                        "M",
+                        "X"
+                    ]
+                }
+            ]
+        },
+        "Secci\u00f3n 2": {
+            "alumnos": 33,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "M",
+                        "L",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "J",
+                        "M",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "M",
+                        "L",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "X",
+                        "L",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "L",
+                        "M",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "X",
+                        "M",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "L",
+                        "V",
+                        "X"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "nombre": "Redes de Computadoras",
+        "secciones": [
+            1,
+            2
+        ],
+        "Secci\u00f3n 1": {
+            "alumnos": 39,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "L",
+                        "J",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "X",
+                        "J",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "X",
+                        "J",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "J",
+                        "L",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "X",
+                        "J",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "J",
+                        "M",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "J",
+                        "X",
+                        "M"
+                    ]
+                }
+            ]
+        },
+        "Secci\u00f3n 2": {
+            "alumnos": 33,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "X",
+                        "M",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "M",
+                        "V",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "X",
+                        "V",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "L",
+                        "M",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "L",
+                        "M",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "M",
+                        "J",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "M",
+                        "V",
+                        "X"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "nombre": "Base de Datos",
+        "secciones": [
+            1,
+            2
+        ],
+        "Secci\u00f3n 1": {
+            "alumnos": 35,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "J",
+                        "X",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "M",
+                        "L",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "J",
+                        "M",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "L",
+                        "M",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "L",
+                        "J",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "L",
+                        "J",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "L",
+                        "J",
+                        "V"
+                    ]
+                }
+            ]
+        },
+        "Secci\u00f3n 2": {
+            "alumnos": 35,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "L",
+                        "V",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "V",
+                        "J",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "X",
+                        "L",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "M",
+                        "L",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "J",
+                        "V",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "L",
+                        "J",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "J",
+                        "V",
+                        "X"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "nombre": "Sistemas Operativos",
+        "secciones": [
+            1,
+            2
+        ],
+        "Secci\u00f3n 1": {
+            "alumnos": 31,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "V",
+                        "J",
+                        "X"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "X",
+                        "M",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "X",
+                        "V",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "X",
+                        "V",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "L",
+                        "M",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "M",
+                        "V",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "J",
+                        "M",
+                        "L"
+                    ]
+                }
+            ]
+        },
+        "Secci\u00f3n 2": {
+            "alumnos": 34,
+            "horarios": [
+                {
+                    "hora_inicio": 510,
+                    "dias": [
+                        "L",
+                        "V",
+                        "J"
+                    ]
+                },
+                {
+                    "hora_inicio": 600,
+                    "dias": [
+                        "J",
+                        "V",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 690,
+                    "dias": [
+                        "J",
+                        "L",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 780,
+                    "dias": [
+                        "M",
+                        "X",
+                        "V"
+                    ]
+                },
+                {
+                    "hora_inicio": 870,
+                    "dias": [
+                        "V",
+                        "X",
+                        "M"
+                    ]
+                },
+                {
+                    "hora_inicio": 960,
+                    "dias": [
+                        "V",
+                        "X",
+                        "L"
+                    ]
+                },
+                {
+                    "hora_inicio": 1050,
+                    "dias": [
+                        "M",
+                        "L",
+                        "V"
+                    ]
+                }
+            ]
+        }
+    }
+]
