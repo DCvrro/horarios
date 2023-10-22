@@ -15,7 +15,7 @@ malla = [
 ]
 
 # Nombre del archivo CSV de salida
-nombre_archivo = "malla_curricular.csv"
+nombre_archivo = "datos.csv"
 
 # Escribir la información en el archivo CSV
 with open(nombre_archivo, mode='w', newline='') as archivo_csv:

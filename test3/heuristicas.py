@@ -4,6 +4,8 @@ import random
 # ...
 
 # Heurística Aleatoria
+import random
+
 def heuristica_aleatoria(datos):
     # Lista de horarios disponibles (bloques de 2 horas)
     horarios_disponibles = list(range(9, 18, 2))
@@ -16,25 +18,27 @@ def heuristica_aleatoria(datos):
     random.shuffle(pruebas)
 
     for prueba in pruebas:
+        if not horarios_disponibles:
+            # Si no quedan horarios disponibles en el día, pasar al siguiente día
+            horarios_disponibles = list(range(9, 18, 2))
+
         # Seleccionar un horario aleatorio de la lista de horarios disponibles
         horario = random.choice(horarios_disponibles)
-        
+
         # Verificar si el horario seleccionado no excede las horas disponibles en un día (9 AM - 6 PM)
         if horario + 2 > 18:
             # Si excede, seleccionar un nuevo horario aleatorio
             horarios_disponibles.remove(horario)
-            if not horarios_disponibles:
-                # Si no hay más horarios disponibles en el día, pasar al siguiente día
-                horarios_disponibles = list(range(9, 18, 2))
-            horario = random.choice(horarios_disponibles)
+            continue
 
         # Asignar la prueba al horario seleccionado
         asignacion[prueba] = horario
         
         # Actualizar la lista de horarios disponibles
         horarios_disponibles.remove(horario)
-    
+
     return asignacion
+
 
 
 # Heurística por Semestre
@@ -50,6 +54,16 @@ def heuristica_por_semestre(datos):
     pruebas.sort(key=lambda prueba: datos[prueba]['semestre'])
 
     for prueba in pruebas:
+        # Obtener el semestre de la prueba actual
+        semestre_actual = datos[prueba]['semestre']
+        
+        # Filtrar las pruebas que ya han sido asignadas en el mismo día para el semestre actual
+        pruebas_semestre_actual = [p for p, h in asignacion.items() if datos[p]['semestre'] == semestre_actual and h[0] == horarios_disponibles[0]]
+        
+        if len(pruebas_semestre_actual) >= 4:
+            # Si ya hay 4 pruebas del mismo semestre en el mismo día, pasar al siguiente día
+            horarios_disponibles = list(range(9, 18, 2))
+        
         # Seleccionar un horario aleatorio de la lista de horarios disponibles
         horario = horarios_disponibles[0]
         
@@ -63,12 +77,13 @@ def heuristica_por_semestre(datos):
             horario = horarios_disponibles[0]
 
         # Asignar la prueba al horario seleccionado
-        asignacion[prueba] = horario
+        asignacion[prueba] = (horario, horarios_disponibles[0])
         
         # Actualizar la lista de horarios disponibles
         horarios_disponibles.pop(0)
     
     return asignacion
+
 
 # Heurística por Bloques Disponibles
 def heuristica_por_bloques_disponibles(datos):
