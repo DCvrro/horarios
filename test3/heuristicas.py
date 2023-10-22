@@ -1,11 +1,5 @@
 import random
 
-# Definir los datos de entrada
-# ...
-
-# Heurística Aleatoria
-import random
-
 def heuristica_aleatoria(datos):
     # Lista de horarios disponibles (bloques de 2 horas)
     horarios_disponibles = list(range(9, 18, 2))
@@ -38,6 +32,7 @@ def heuristica_aleatoria(datos):
         horarios_disponibles.remove(horario)
 
     return asignacion
+
 
 
 
@@ -87,34 +82,18 @@ def heuristica_por_semestre(datos):
 
 # Heurística por Bloques Disponibles
 def heuristica_por_bloques_disponibles(datos):
-    # Lista de horarios disponibles (bloques de 2 horas)
-    horarios_disponibles = list(range(9, 18, 2))
-    
-    # Inicializar la asignación de horarios
-    asignacion = {}
-
-    # Obtener la lista de pruebas
     pruebas = list(datos.keys())
-
+    horarios_disponibles = [bloque for bloque in range(9, 18, 2)]  # Horarios disponibles de 9 AM a 6 PM
+    random.shuffle(horarios_disponibles)  # Baraja la lista de horarios disponibles
+    asignacion = {}
     for prueba in pruebas:
-        # Seleccionar un bloque horario disponible aleatorio
-        bloque_asignado = random.choice(horarios_disponibles)
-        
-        # Verificar si el bloque seleccionado no excede las horas disponibles en un día (9 AM - 6 PM)
-        if bloque_asignado + 2 > 18:
-            # Si excede, seleccionar un nuevo bloque horario aleatorio
-            horarios_disponibles.remove(bloque_asignado)
-            if not horarios_disponibles:
-                # Si no hay más bloques horarios disponibles en el día, pasar al siguiente día
-                horarios_disponibles = list(range(9, 18, 2))
-            bloque_asignado = random.choice(horarios_disponibles)
-
-        # Asignar la prueba al bloque horario seleccionado
+        if not horarios_disponibles:
+            # Si no hay más horarios disponibles, vuelve a crear la lista
+            horarios_disponibles = [bloque for bloque in range(9, 18, 2)]
+            random.shuffle(horarios_disponibles)
+        bloque_asignado = horarios_disponibles.pop(0)
+        # Asignar la prueba al bloque disponible
         asignacion[prueba] = bloque_asignado
-        
-        # Actualizar la lista de bloques horarios disponibles
-        horarios_disponibles.remove(bloque_asignado)
-    
     return asignacion
 
 
@@ -222,3 +201,44 @@ def evaluar_asignacion(asignacion):
             asignacion[prueba1], asignacion[prueba2] = asignacion[prueba2], asignacion[prueba1]
     
     return mejor_asignacion
+
+
+def h_aleatoria(datos):
+    dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
+    horario = {}
+    for dia in dias:  #con esto asigno los dias de la semana de la libreta
+        horario[dia] = {}
+    bloques =  4
+    asignaturas = []
+    for sem in datos:
+        for asig in datos[sem]['asignaturas']:
+            asignaturas.append(asig)
+    
+    print(len(asignaturas))
+    for dias in horario:
+        #Creamos los bloques
+        for i in range(bloques):
+            horario[dias][i+1] = []
+            
+
+    validar = True 
+    
+    while validar:
+        for day in horario:
+            for block in horario[day]:
+                if asignaturas != [] and len(horario[day][block]) < 4:
+                    tmp = random.choice(asignaturas)
+        
+                    horario[day][block].append(tmp)
+                    asignaturas.remove(tmp)
+            if validar == False:
+                break
+        if asignaturas == []:
+            validar = False
+            break
+        
+    print(horario)
+    
+    
+
+#reviso si existe una asignatura del mismo semestre en el mismo dia
