@@ -1,5 +1,24 @@
 import random
 
+class asignatura:
+    def __init__(self,ramo, semestre):
+        self.ramo = ramo
+        self.semestre = semestre
+    def getRamo(self):
+        return self.ramo
+    
+    def getSemestre(self):
+        return self.semestre
+    
+    def setRamo(self, ramo):
+        self.ramo = ramo
+        
+    def setSemestre(self, semestre):
+        self.semestre = semestre
+    
+    def getData(self):
+        return self.ramo, self.semestre
+
 def heuristica_aleatoria(datos):
     # Lista de horarios disponibles (bloques de 2 horas)
     horarios_disponibles = list(range(9, 18, 2))
@@ -32,9 +51,6 @@ def heuristica_aleatoria(datos):
         horarios_disponibles.remove(horario)
 
     return asignacion
-
-
-
 
 # Heurística por Semestre
 def heuristica_por_semestre(datos):
@@ -79,7 +95,6 @@ def heuristica_por_semestre(datos):
     
     return asignacion
 
-
 # Heurística por Bloques Disponibles
 def heuristica_por_bloques_disponibles(datos):
     pruebas = list(datos.keys())
@@ -95,7 +110,6 @@ def heuristica_por_bloques_disponibles(datos):
         # Asignar la prueba al bloque disponible
         asignacion[prueba] = bloque_asignado
     return asignacion
-
 
 # Heurística por Restricción de Día
 
@@ -142,7 +156,6 @@ def heuristica_por_restriccion_de_dia(datos):
         horarios_disponibles.remove(horario)
     
     return asignacion
-
 
 # Heurística de Búsqueda Local
 def heuristica_busqueda_local(datos):
@@ -202,6 +215,27 @@ def evaluar_asignacion(asignacion):
     
     return mejor_asignacion
 
+def obtener_semestre(asignatura, datos):
+    for semestre, asignaturas in datos.items():
+        if asignatura in asignaturas['asignaturas']:
+            return semestre
+
+def hay_tope_por_semestre(asignatura, dia, horario, datos):
+    # Obten el semestre de la asignatura dada
+    semestre_asignatura = obtener_semestre(asignatura, datos)
+
+    # Recorre el horario para el día especificado
+    for bloque in horario[dia]:
+        asignaturas_bloque = horario[dia][bloque]
+
+        # Si el bloque no está lleno y hay asignaturas
+        if len(asignaturas_bloque) < 4 and asignaturas_bloque:
+            # Verifica si alguna asignatura del mismo semestre ya está en el bloque
+            for asignatura_en_bloque in asignaturas_bloque:
+                semestre_en_bloque = obtener_semestre(asignatura_en_bloque, datos)
+                if semestre_en_bloque == semestre_asignatura:
+                    return True
+    return False
 
 def h_aleatoria(datos):
     dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
@@ -228,7 +262,8 @@ def h_aleatoria(datos):
             for block in horario[day]:
                 if asignaturas != [] and len(horario[day][block]) < 4:
                     tmp = random.choice(asignaturas)
-        
+                    while hay_tope_por_semestre(tmp, day, horario, datos):
+                        tmp = random.choice(asignaturas)
                     horario[day][block].append(tmp)
                     asignaturas.remove(tmp)
             if validar == False:
@@ -239,6 +274,41 @@ def h_aleatoria(datos):
         
     print(horario)
     
-    
+def h_aleatoria2(datos):
+    dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
+    horario = {}
+    for dia in dias:  #con esto asigno los dias de la semana de la libreta
+        horario[dia] = {}
+    bloques =  4
+    #creamos un arreglo con todas las asignaturas
+    asignaturas = []
+    for sem in datos:
+
+        for asig in datos[sem]['asignaturas']:
+            tmp = asignatura(asig, sem)
+            asignaturas.append(tmp)
+    for dias in horario:
+        #Creamos los bloques
+        for i in range(bloques):
+            horario[dias][i+1] = []
+            
+    while len(asignaturas) != 0:
+        for day in horario:
+            dia = []
+            for bloque in horario[day]:
+                validar = True
+                while(validar):
+                    if asignaturas != []:
+                        tmp = random.choice(asignaturas)
+                        semTmp = tmp.getSemestre()
+                        if semTmp not in dia:
+                            horario[day][bloque].append(tmp)
+                            dia.append(semTmp) #A cada dia, le agrego los semestres que se evaluan
+                            asignaturas.remove(tmp)
+                    if len(horario[day][bloque]) == 4 or (asignaturas == []):
+                        validar = False
+                    break
+    return horario
+
 
 #reviso si existe una asignatura del mismo semestre en el mismo dia
