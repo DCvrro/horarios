@@ -16,7 +16,7 @@ with open('datos.csv', newline='', encoding='iso-8859-1') as archivo_csv:
 
 # Aplica las heurísticas para asignar horarios a las pruebas
 semana = h_aleatoria2(datos)
-#print(semana)
+print(semana)
 for dia,bloques in semana.items():
     print(dia)
     count = 0

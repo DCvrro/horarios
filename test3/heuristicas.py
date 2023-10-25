@@ -292,22 +292,53 @@ def h_aleatoria2(datos):
         for i in range(bloques):
             horario[dias][i+1] = []
             
-    while len(asignaturas) != 0:
-        for day in horario:
-            dia = []
-            for bloque in horario[day]:
-                validar = True
-                while(validar):
-                    if asignaturas != []:
-                        tmp = random.choice(asignaturas)
-                        semTmp = tmp.getSemestre()
-                        if semTmp not in dia:
-                            horario[day][bloque].append(tmp)
-                            dia.append(semTmp) #A cada dia, le agrego los semestres que se evaluan
-                            asignaturas.remove(tmp)
-                    if len(horario[day][bloque]) == 4 or (asignaturas == []):
-                        validar = False
+    #while len(asignaturas) != 0:
+    #    for day in horario:
+    #        dia = []
+    #        for bloque in horario[day]:
+    #            validar = True
+    #            while(validar):
+    #                if asignaturas != []:
+    #                    tmp = random.choice(asignaturas)
+    #                    semTmp = tmp.getSemestre()
+    #                    if semTmp not in dia:
+    #                        horario[day][bloque].append(tmp)
+    #                        dia.append(semTmp) #A cada dia, le agrego los semestres que se evaluan
+    #                        asignaturas.remove(tmp)
+    #                if len(horario[day][bloque]) >= 2  or (asignaturas == []):
+    #                    print("Dia:", day , "bloque: ", bloque , "Semestres: ", dia)
+    #                    validar = False
+    #                break
+
+    for dias in horario:
+        semDia = []
+        for bloque in horario[dias]:
+            for i in range(0,4):
+                if asignaturas == []:
                     break
+                tmp = random.choice(asignaturas)
+                semTmp = tmp.getSemestre()
+                if semTmp not in semDia:
+                    horario[dias][bloque].append(tmp)
+                    semDia.append(semTmp)
+                    asignaturas.remove(tmp)
+                elif semTmp in semDia and len(semDia) < 10:
+                    validar = True
+                    while(validar):
+                        if asignaturas == []:
+                            break
+                        tmp_ = random.choice(asignaturas)
+                        semTmp_ = tmp_.getSemestre()
+                        if semTmp_ not in semDia:
+                            horario[dias][bloque].append(tmp_)
+                            semDia.append(semTmp_)
+                            asignaturas.remove(tmp_)
+                            validar = False
+                            break
+                        else:
+                            validar = True
+                print("Dia:", dias , "bloque: ", bloque , "Semestres: ", semDia, "Asignaturas: ", len(asignaturas))
+
     return horario
 
 
