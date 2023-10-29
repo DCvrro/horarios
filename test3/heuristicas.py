@@ -215,28 +215,6 @@ def evaluar_asignacion(asignacion):
     
     return mejor_asignacion
 
-def obtener_semestre(asignatura, datos):
-    for semestre, asignaturas in datos.items():
-        if asignatura in asignaturas['asignaturas']:
-            return semestre
-
-def hay_tope_por_semestre(asignatura, dia, horario, datos):
-    # Obten el semestre de la asignatura dada
-    semestre_asignatura = obtener_semestre(asignatura, datos)
-
-    # Recorre el horario para el día especificado
-    for bloque in horario[dia]:
-        asignaturas_bloque = horario[dia][bloque]
-
-        # Si el bloque no está lleno y hay asignaturas
-        if len(asignaturas_bloque) < 4 and asignaturas_bloque:
-            # Verifica si alguna asignatura del mismo semestre ya está en el bloque
-            for asignatura_en_bloque in asignaturas_bloque:
-                semestre_en_bloque = obtener_semestre(asignatura_en_bloque, datos)
-                if semestre_en_bloque == semestre_asignatura:
-                    return True
-    return False
-
 def h_aleatoria(datos):
     dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
     horario = {}
@@ -273,7 +251,84 @@ def h_aleatoria(datos):
             break
         
     print(horario)
-    
+
+def h_aleatoria3(datos):
+    dias = ['1', '2', '3', '4', '5']
+    semana = [[],[],[],[],[]]
+    horario = {}
+    for dia in dias:  #con esto asigno los dias de la semana de la libreta
+        horario[dia] = {}
+    bloques =  4
+    #creamos un arreglo con todas las asignaturas
+    asignaturas = []
+    for sem in datos: 
+            for asig in datos[sem]['asignaturas']:
+                tmp = asignatura(asig, sem)
+                asignaturas.append(tmp)
+    for dias in horario:
+        #Creamos los bloques
+        for i in range(bloques):
+            horario[dias][i+1] = []
+    while asignaturas != []:
+        dia = random.choice(dias)
+        bloques = random.choice(list(range(1,5)))
+        tmp = random.choice(asignaturas)
+        semTmp = tmp.getSemestre()
+        if semTmp not in semana[int(dia)-1]:
+            horario[dia][bloques].append(tmp)
+            semana[int(dia)-1].append(semTmp)
+            asignaturas.remove(tmp)
+        elif semTmp not in semana[int(dia)-1] and len(horario[dia][bloques]) > 4:
+            #pruebo en otro bloque del mismo dia 
+            if bloques >= 2 and bloques <= 4:
+                bloques = bloques - 1
+                if semTmp not in semana[int(dia)-1]:
+                    horario[dia][bloques].append(tmp)
+                    semana[int(dia)-1].append(semTmp)
+                    asignaturas.remove(tmp)
+                else:
+                    continue
+            elif bloques == 1:
+                bloques = random.choice(list(range(2,5)))
+                if semTmp not in semana[int(dia)-1]:
+                    horario[dia][bloques].append(tmp)
+                    semana[int(dia)-1].append(semTmp)
+                    asignaturas.remove(tmp)
+                else:
+                    continue
+        elif semTmp in semana[int(dia)-1] and len(semana[int(dia)-1]) < 10:
+            validar = True
+            count = 0 
+            while(validar):
+                if asignaturas == []:
+                    break
+                tmp_ = random.choice(asignaturas)
+                semTmp_ = tmp_.getSemestre()
+                if semTmp_ not in semana[int(dia)-1]:
+                    horario[dia][bloques].append(tmp_)
+                    semana[int(dia)-1].append(semTmp_)
+                    asignaturas.remove(tmp_)
+                    validar = False
+                    break
+                elif count == 10:
+                    validar = False
+                    break
+                else:
+                    count = count + 1
+                    validar = True
+    return horario
+
+            
+                    
+                
+
+        
+     
+
+
+
+
+
 def h_aleatoria2(datos):
     dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
     horario = {}
@@ -291,24 +346,6 @@ def h_aleatoria2(datos):
         #Creamos los bloques
         for i in range(bloques):
             horario[dias][i+1] = []
-            
-    #while len(asignaturas) != 0:
-    #    for day in horario:
-    #        dia = []
-    #        for bloque in horario[day]:
-    #            validar = True
-    #            while(validar):
-    #                if asignaturas != []:
-    #                    tmp = random.choice(asignaturas)
-    #                    semTmp = tmp.getSemestre()
-    #                    if semTmp not in dia:
-    #                        horario[day][bloque].append(tmp)
-    #                        dia.append(semTmp) #A cada dia, le agrego los semestres que se evaluan
-    #                        asignaturas.remove(tmp)
-    #                if len(horario[day][bloque]) >= 2  or (asignaturas == []):
-    #                    print("Dia:", day , "bloque: ", bloque , "Semestres: ", dia)
-    #                    validar = False
-    #                break
 
     for dias in horario:
         semDia = []
@@ -331,13 +368,14 @@ def h_aleatoria2(datos):
                         semTmp_ = tmp_.getSemestre()
                         if semTmp_ not in semDia:
                             horario[dias][bloque].append(tmp_)
+                            print("Dia:", dias , "bloque: ", bloque , "Semestres: ", semDia, "Asignaturas: ", len(asignaturas))
                             semDia.append(semTmp_)
                             asignaturas.remove(tmp_)
                             validar = False
                             break
                         else:
                             validar = True
-                print("Dia:", dias , "bloque: ", bloque , "Semestres: ", semDia, "Asignaturas: ", len(asignaturas))
+                #print("Dia:", dias , "bloque: ", bloque , "Semestres: ", semDia, "Asignaturas: ", len(asignaturas))
 
     return horario
 

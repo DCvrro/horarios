@@ -12,19 +12,19 @@ with open('datos.csv', newline='', encoding='iso-8859-1') as archivo_csv:
             if asignatura:  # Asegúrate de que la asignatura no esté vacía
                 asignaturas.append(asignatura)
         datos[semestre] = {'semestre': semestre, 'asignaturas': asignaturas}
-#print(datos)
+print(datos)
 
 # Aplica las heurísticas para asignar horarios a las pruebas
-semana = h_aleatoria2(datos)
-print(semana)
-for dia,bloques in semana.items():
-    print(dia)
-    count = 0
-    for bloque, ramo in bloques.items():
-        print("Bloque: ",count)
-        count += 1
-        for r in ramo:
-            print(r.getRamo())
+#semana = h_aleatoria2(datos)
+#print(semana)
+#for dia,bloques in semana.items():
+#    print(dia)
+#    count = 0
+#    for bloque, ramo in bloques.items():
+#        print("Bloque: ",count)
+#        count += 1
+#        for r in ramo:
+#            print(r.getRamo())
         
 
 #resultado_semestre = heuristica_por_semestre(datos)
