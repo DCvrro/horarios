@@ -4,20 +4,20 @@ Heuristica 1
 Lunes
 
 Bloque: 0
+IA
+CFG
 Arquitectura y Organizacin de Computadores
-Taller de Redes y Servicios
-Electivo Profesional
-lgebra Lineal
+CFG
 
 Bloque: 1
-Comunicacin para la Ingeniera
-Sistemas Distribuidos
 Electivo Profesional
-Criptografa y Seguridad en Redes
+Bases de Datos
+Data Science
+Clculo 3
 
 Bloque: 2
-Bases de Datos
-Clculo 3
+Programacin
+CFG
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -27,20 +27,20 @@ Semestres evaluados el dia Lunes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Martes
 
 Bloque: 0
-Proyecto en TICS 2
-Optimizacin
-EDO
-Data Science
+Redes de Datos
+Bases de Datos Avanzadas
+Algebra y GeometrÃ­a
+lgebra Lineal
 
 Bloque: 1
-Desarrollo Web y Mvil
-Mecnica
-Tecnologas Inalmbricas
+Electricidad y Magnetismo
+Electivo Profesional
 Seales y Sistemas
+Tecnologas Inalmbricas
 
 Bloque: 2
-Programacin
-Gestin Organizacional
+Comunicaciones Digitales
+Electivo Profesional
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -50,20 +50,20 @@ Semestres evaluados el dia Martes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Miercoles
 
 Bloque: 0
-Electrnica y Electrotecnia
-CFG
-QuÃ­mica
-IA
+Evaluacin de Proyectos TIC
+Sistemas Operativos
+Gestin Organizacional
+Mecnica
 
 Bloque: 1
+Electivo Profesional
+Desarrollo Web y Mvil
+QuÃ­mica
 Estructura de Datos y Algoritmos
-Bases de Datos Avanzadas
-CFG
-Programacin Avanzada
 
 Bloque: 2
-Arquitectura de Software
-Electivo Profesional
+Taller de Redes y Servicios
+Proyecto en TICS 2
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -73,20 +73,20 @@ Semestres evaluados el dia Miercoles: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Jueves
 
 Bloque: 0
-Calor y Ondas
+Electivo Profesional
+Criptografa y Seguridad en Redes
 Probabilidad y Estadsticas
-Ingeniera de Software
-CFG
+Programacin Avanzada
 
 Bloque: 1
-Clculo 1
-Arquitecturas Emergentes
 Contabilidad y Costos
-Electivo Profesional
+Clculo 1
+Proyecto en TICs 1
+Calor y Ondas
 
 Bloque: 2
-Introduccin a la Economa
-Proyecto en TICs 1
+Arquitectura de Software
+Sistemas Distribuidos
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -96,145 +96,25 @@ Semestres evaluados el dia Jueves: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Viernes
 
 Bloque: 0
-Comunicaciones Digitales
-Algebra y GeometrÃ­a
-Sistemas Operativos
-Electricidad y Magnetismo
+Electrnica y Electrotecnia
+Electivo Profesional
+Arquitecturas Emergentes
+Comunicacin para la Ingeniera
 
 Bloque: 1
+Ingeniera de Software
+EDO
+Introduccin a la Economa
 CFG
-Evaluacin de Proyectos TIC
-Electivo Profesional
-Redes de Datos
 
 Bloque: 2
-Electivo Profesional
 Clculo 2
+Optimizacin
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
 Total de ramos para el dia Viernes: 10
 Semestres evaluados el dia Viernes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-------------------------------------------------------------------------------------------------------------------------
-Total de ramos: 50 de 50
-------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------
-Heuristica 2
-------------------------------------------------------------------------------------------------------------------------
-1
-
-Bloque: 0
-Arquitectura de Software
-lgebra Lineal
-EDO
-Taller de Redes y Servicios
-
-Bloque: 1
-Evaluacin de Proyectos TIC
-Electivo Profesional
-QuÃ­mica
-
-Bloque: 2
-
-Bloque: 3
-Sistemas Distribuidos
-CFG
-Electricidad y Magnetismo
-------------------------------------------------------------------------------------------------------------------------
-Total de ramos para el dia 1: 10
-Semestres evaluados el dia 1: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-------------------------------------------------------------------------------------------------------------------------
-2
-
-Bloque: 0
-CFG
-Probabilidad y Estadsticas
-
-Bloque: 1
-CFG
-Sistemas Operativos
-
-Bloque: 2
-Gestin Organizacional
-Redes de Datos
-Proyecto en TICS 2
-
-Bloque: 3
-Programacin
-Tecnologas Inalmbricas
-Electivo Profesional
-------------------------------------------------------------------------------------------------------------------------
-Total de ramos para el dia 2: 10
-Semestres evaluados el dia 2: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-------------------------------------------------------------------------------------------------------------------------
-3
-
-Bloque: 0
-Electivo Profesional
-Proyecto en TICs 1
-Seales y Sistemas
-Introduccin a la Economa
-
-Bloque: 1
-Programacin Avanzada
-Electivo Profesional
-
-Bloque: 2
-Algebra y GeometrÃ­a
-Bases de Datos
-Clculo 3
-
-Bloque: 3
-Ingeniera de Software
-------------------------------------------------------------------------------------------------------------------------
-Total de ramos para el dia 3: 10
-Semestres evaluados el dia 3: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-------------------------------------------------------------------------------------------------------------------------
-4
-
-Bloque: 0
-Bases de Datos Avanzadas
-Desarrollo Web y Mvil
-Mecnica
-Electivo Profesional
-
-Bloque: 1
-IA
-
-Bloque: 2
-Comunicaciones Digitales
-
-Bloque: 3
-Estructura de Datos y Algoritmos
-Arquitecturas Emergentes
-Arquitectura y Organizacin de Computadores
-Clculo 1
-------------------------------------------------------------------------------------------------------------------------
-Total de ramos para el dia 4: 10
-Semestres evaluados el dia 4: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-------------------------------------------------------------------------------------------------------------------------
-5
-
-Bloque: 0
-Calor y Ondas
-Comunicacin para la Ingeniera
-Electivo Profesional
-
-Bloque: 1
-Contabilidad y Costos
-Optimizacin
-CFG
-
-Bloque: 2
-Electrnica y Electrotecnia
-Criptografa y Seguridad en Redes
-
-Bloque: 3
-Data Science
-Clculo 2
-------------------------------------------------------------------------------------------------------------------------
-Total de ramos para el dia 5: 10
-Semestres evaluados el dia 5: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 ------------------------------------------------------------------------------------------------------------------------
 Total de ramos: 50 de 50
 ------------------------------------------------------------------------------------------------------------------------

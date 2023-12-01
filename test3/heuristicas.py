@@ -126,5 +126,42 @@ def h_aleatoria2(datos):
 
     return horario
 
-
+# Heurística 1: Distribuir aleatoriamente las asignaturas en días y bloques
+def heuristica_1(asignaturas):
+    horario = {'Lunes': {}, 'Martes': {}, 'Miércoles': {}, 'Jueves': {}, 'Viernes': {}}
+    
+    # Obtener la lista de asignaturas para cada semestre y barajarlas
+    lista_asignaturas = [semestre['asignaturas'] for semestre in asignaturas.values()]
+    random.shuffle(lista_asignaturas)
+    
+    for asignatura in lista_asignaturas:
+        for dia in horario.keys():
+            for bloque in range(1, 5):  # Dividir en 4 bloques para cada día
+                if len(asignatura) > 0:
+                    if bloque not in horario[dia]:
+                        horario[dia][bloque] = []
+                    horario[dia][bloque].append(asignatura.pop())
+    return horario
 #reviso si existe una asignatura del mismo semestre en el mismo dia
+
+#Heuristica por  orden de bloque, llenamos primero el bloque 1 de todos los dias y continuamos
+def heuristica_2(datos):
+    dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
+    horario = {}
+    for dia in dias:  #con esto asigno los dias de la semana de la libreta
+        horario[dia] = {}
+    bloques =  4
+    #creamos un arreglo con todas las asignaturas
+    asignaturas = []
+    for sem in datos:
+
+        for asig in datos[sem]['asignaturas']:
+            tmp = asignatura(asig, sem)
+            asignaturas.append(tmp)
+    for dias in horario:
+        #Creamos los bloques
+        for i in range(bloques):
+            horario[dias][i+1] = []
+    print(datos)
+
+    return horario
