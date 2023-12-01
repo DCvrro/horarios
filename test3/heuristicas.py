@@ -125,43 +125,96 @@ def h_aleatoria2(datos):
                 #print("Dia:", dias , "bloque: ", bloque , "Semestres: ", semDia, "Asignaturas: ", len(asignaturas))
 
     return horario
-
-# Heurística 1: Distribuir aleatoriamente las asignaturas en días y bloques
-def heuristica_1(asignaturas):
-    horario = {'Lunes': {}, 'Martes': {}, 'Miércoles': {}, 'Jueves': {}, 'Viernes': {}}
-    
-    # Obtener la lista de asignaturas para cada semestre y barajarlas
-    lista_asignaturas = [semestre['asignaturas'] for semestre in asignaturas.values()]
-    random.shuffle(lista_asignaturas)
-    
-    for asignatura in lista_asignaturas:
-        for dia in horario.keys():
-            for bloque in range(1, 5):  # Dividir en 4 bloques para cada día
-                if len(asignatura) > 0:
-                    if bloque not in horario[dia]:
-                        horario[dia][bloque] = []
-                    horario[dia][bloque].append(asignatura.pop())
-    return horario
-#reviso si existe una asignatura del mismo semestre en el mismo dia
-
-#Heuristica por  orden de bloque, llenamos primero el bloque 1 de todos los dias y continuamos
-def heuristica_2(datos):
+#heuristica por orden de malla.
+def  heuristica_3(datos):
     dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
     horario = {}
     for dia in dias:  #con esto asigno los dias de la semana de la libreta
         horario[dia] = {}
     bloques =  4
-    #creamos un arreglo con todas las asignaturas
     asignaturas = []
     for sem in datos:
-
         for asig in datos[sem]['asignaturas']:
             tmp = asignatura(asig, sem)
             asignaturas.append(tmp)
     for dias in horario:
         #Creamos los bloques
         for i in range(bloques):
-            horario[dias][i+1] = []
-    print(datos)
+            horario[dias][i] = []
+    
+    for i in range(0,4):
+        for dias in horario:
+            if asignaturas == []:
+                break
+            else: 
+                horario[dias][i].append(asignaturas.pop())
+                print(asignaturas)
+ 
+    return horario
 
+def heuristica_4(datos):
+    probabilidades = {
+       'Algebra y Geometría': 0.05,
+       'Clculo 1': 0.05,
+       'Química': 0.05,
+       'Programacion': 0.05,
+       'Comunicacion para la Ingeniera': 0.05,
+       'lgebra Lineal': 0.04,
+       'Clculo 2': 0.04,
+       'Mecnica': 0.04,
+       'Programacion Avanzada': 0.04,
+       'CFG': 0.04,
+       'EDO': 0.03,
+       'Clculo 3': 0.03,
+       'Calor y Ondas': 0.03,
+       'Estructura de Datos y Algoritmos': 0.03,
+       'Redes de Datos': 0.03,
+       'Probabilidad y Estadsticas': 0.02,
+       'Electrnica y Electrotecnia': 0.02,
+       'Electricidad y Magnetismo': 0.02,
+       'Bases de Datos': 0.02,
+       'Desarrollo Web y Mvil': 0.02,
+       'Optimizacin': 0.015,
+       'Taller de Redes y Servicios': 0.015,
+       'Proyecto en TICs 1': 0.015,
+       'Bases de Datos Avanzadas': 0.015,
+       'Contabilidad y Costos': 0.015,
+       'Arquitectura y Organizacin de Computadores': 0.015,
+       'Seales y Sistemas': 0.015,
+       'Sistemas Operativos': 0.015,
+       'Gestin Organizacional': 0.01,
+       'Sistemas Distribuidos': 0.01,
+       'Comunicaciones Digitales': 0.01,
+       'Ingeniera de Software': 0.01,
+       'Introduccin a la Economa': 0.01,
+       'Tecnologas Inalmbricas': 0.01,
+       'Criptografa y Seguridad en Redes': 0.01,
+       'IA': 0.01,
+       'Evaluacin de Proyectos TIC': 0.01,
+       'Electivo Profesional': 0.005,
+       'Arquitecturas Emergentes': 0.005,
+       'Arquitectura de Software': 0.005,
+       'Data Science': 0.005,
+       'Proyecto en TICS 2': 0.005,
+    }   
+    dias = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes']
+    horario = {}
+    for dia in dias:  #con esto asigno los dias de la semana de la libreta
+        horario[dia] = {}
+    bloques =  4
+    asignaturas = []
+    for sem in datos:
+        for asig in datos[sem]['asignaturas']:
+            tmp = asignatura(asig, sem)
+            asignaturas.append(tmp)
+    for dias in horario:
+        #Creamos los bloques
+        for i in range(bloques):
+            horario[dias][i] = []
+    for dias in horario:
+        for dias in bloques:
+            if asignaturas == []:
+                break
+            else: 
+                horario[dias][i].append(asignaturas.pop())
     return horario

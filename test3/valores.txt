@@ -1,0 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
+Heuristica 1
+Lunes 10 Martes 10 Miercoles 10 Jueves 10 Viernes 10 
+total 50
+Heuristica 2
+Lunes 4 Martes 4 Miercoles 4 Jueves 4 Viernes 4 
+total 20

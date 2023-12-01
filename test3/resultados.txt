@@ -4,20 +4,20 @@ Heuristica 1
 Lunes
 
 Bloque: 0
-IA
 CFG
-Arquitectura y Organizacin de Computadores
-CFG
+Electrnica y Electrotecnia
+Introduccin a la Economa
+Comunicaciones Digitales
 
 Bloque: 1
-Electivo Profesional
-Bases de Datos
+Mecnica
+Redes de Datos
+Sistemas Operativos
 Data Science
-Clculo 3
 
 Bloque: 2
-Programacin
-CFG
+Electivo Profesional
+Algebra y Geometría
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -27,20 +27,20 @@ Semestres evaluados el dia Lunes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Martes
 
 Bloque: 0
-Redes de Datos
-Bases de Datos Avanzadas
-Algebra y GeometrÃ­a
-lgebra Lineal
+Clculo 1
+IA
+Electivo Profesional
+Electivo Profesional
 
 Bloque: 1
-Electricidad y Magnetismo
-Electivo Profesional
-Seales y Sistemas
-Tecnologas Inalmbricas
+Probabilidad y Estadsticas
+Arquitectura y Organizacin de Computadores
+Sistemas Distribuidos
+Estructura de Datos y Algoritmos
 
 Bloque: 2
-Comunicaciones Digitales
-Electivo Profesional
+Programacin Avanzada
+Optimizacin
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -50,20 +50,20 @@ Semestres evaluados el dia Martes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Miercoles
 
 Bloque: 0
-Evaluacin de Proyectos TIC
-Sistemas Operativos
-Gestin Organizacional
-Mecnica
+Ingeniera de Software
+Electricidad y Magnetismo
+Proyecto en TICS 2
+Programacin
 
 Bloque: 1
+lgebra Lineal
 Electivo Profesional
-Desarrollo Web y Mvil
-QuÃ­mica
-Estructura de Datos y Algoritmos
+Tecnologas Inalmbricas
+EDO
 
 Bloque: 2
+Contabilidad y Costos
 Taller de Redes y Servicios
-Proyecto en TICS 2
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -73,20 +73,20 @@ Semestres evaluados el dia Miercoles: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Jueves
 
 Bloque: 0
-Electivo Profesional
-Criptografa y Seguridad en Redes
-Probabilidad y Estadsticas
-Programacin Avanzada
+Clculo 2
+Arquitecturas Emergentes
+CFG
+Evaluacin de Proyectos TIC
 
 Bloque: 1
-Contabilidad y Costos
-Clculo 1
-Proyecto en TICs 1
-Calor y Ondas
+Desarrollo Web y Mvil
+Electivo Profesional
+Comunicacin para la Ingeniera
+Bases de Datos Avanzadas
 
 Bloque: 2
-Arquitectura de Software
-Sistemas Distribuidos
+Calor y Ondas
+Seales y Sistemas
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -96,20 +96,20 @@ Semestres evaluados el dia Jueves: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Viernes
 
 Bloque: 0
-Electrnica y Electrotecnia
-Electivo Profesional
-Arquitecturas Emergentes
-Comunicacin para la Ingeniera
+Bases de Datos
+CFG
+Proyecto en TICs 1
+Arquitectura de Software
 
 Bloque: 1
-Ingeniera de Software
-EDO
-Introduccin a la Economa
+Criptografa y Seguridad en Redes
+Gestin Organizacional
+Electivo Profesional
 CFG
 
 Bloque: 2
-Clculo 2
-Optimizacin
+Química
+Clculo 3
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -117,4 +117,93 @@ Total de ramos para el dia Viernes: 10
 Semestres evaluados el dia Viernes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 ------------------------------------------------------------------------------------------------------------------------
 Total de ramos: 50 de 50
+------------------------------------------------------------------------------------------------------------------------
+Heuristica 2
+------------------------------------------------------------------------------------------------------------------------
+Lunes
+
+Bloque: 0
+Proyecto en TICS 2
+
+Bloque: 1
+Data Science
+
+Bloque: 2
+Evaluacin de Proyectos TIC
+
+Bloque: 3
+CFG
+------------------------------------------------------------------------------------------------------------------------
+Total de ramos para el dia Lunes: 4
+Semestres evaluados el dia Lunes: {8, 9, 10, 7}
+------------------------------------------------------------------------------------------------------------------------
+Martes
+
+Bloque: 0
+Electivo Profesional
+
+Bloque: 1
+Arquitectura de Software
+
+Bloque: 2
+IA
+
+Bloque: 3
+Ingeniera de Software
+------------------------------------------------------------------------------------------------------------------------
+Total de ramos para el dia Martes: 4
+Semestres evaluados el dia Martes: {8, 9, 10, 7}
+------------------------------------------------------------------------------------------------------------------------
+Miercoles
+
+Bloque: 0
+Electivo Profesional
+
+Bloque: 1
+Electivo Profesional
+
+Bloque: 2
+Criptografa y Seguridad en Redes
+
+Bloque: 3
+Comunicaciones Digitales
+------------------------------------------------------------------------------------------------------------------------
+Total de ramos para el dia Miercoles: 4
+Semestres evaluados el dia Miercoles: {8, 9, 10, 7}
+------------------------------------------------------------------------------------------------------------------------
+Jueves
+
+Bloque: 0
+Electivo Profesional
+
+Bloque: 1
+Arquitecturas Emergentes
+
+Bloque: 2
+Tecnologas Inalmbricas
+
+Bloque: 3
+Sistemas Distribuidos
+------------------------------------------------------------------------------------------------------------------------
+Total de ramos para el dia Jueves: 4
+Semestres evaluados el dia Jueves: {8, 9, 10, 7}
+------------------------------------------------------------------------------------------------------------------------
+Viernes
+
+Bloque: 0
+Electivo Profesional
+
+Bloque: 1
+Electivo Profesional
+
+Bloque: 2
+Introduccin a la Economa
+
+Bloque: 3
+Gestin Organizacional
+------------------------------------------------------------------------------------------------------------------------
+Total de ramos para el dia Viernes: 4
+Semestres evaluados el dia Viernes: {8, 9, 10, 7}
+------------------------------------------------------------------------------------------------------------------------
+Total de ramos: 20 de 50
 ------------------------------------------------------------------------------------------------------------------------
