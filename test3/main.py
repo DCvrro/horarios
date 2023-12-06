@@ -26,7 +26,9 @@ if __name__ == '__main__':
     #print(datos)
     h1 = h_aleatoria2(datos)
     h2 = heuristica_3(datos)
-    print(datos)
+    
+    for dato in datos:
+        print(datos[dato.getRamo()])
 
     resultado = ""
 

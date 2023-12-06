@@ -4,20 +4,20 @@ Heuristica 1
 Lunes
 
 Bloque: 0
+Optimizacin
+Electivo Profesional
 CFG
-Electrnica y Electrotecnia
-Introduccin a la Economa
-Comunicaciones Digitales
+Programacin
 
 Bloque: 1
-Mecnica
-Redes de Datos
-Sistemas Operativos
-Data Science
+Evaluacin de Proyectos TIC
+Arquitecturas Emergentes
+Arquitectura y Organizacin de Computadores
+Electricidad y Magnetismo
 
 Bloque: 2
-Electivo Profesional
-Algebra y Geometría
+Sistemas Distribuidos
+Redes de Datos
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -27,20 +27,20 @@ Semestres evaluados el dia Lunes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Martes
 
 Bloque: 0
-Clculo 1
 IA
-Electivo Profesional
-Electivo Profesional
+Mecnica
+Data Science
+Desarrollo Web y Mvil
 
 Bloque: 1
-Probabilidad y Estadsticas
-Arquitectura y Organizacin de Computadores
-Sistemas Distribuidos
-Estructura de Datos y Algoritmos
+Química
+Calor y Ondas
+CFG
+Comunicaciones Digitales
 
 Bloque: 2
-Programacin Avanzada
-Optimizacin
+Taller de Redes y Servicios
+Electivo Profesional
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -50,20 +50,20 @@ Semestres evaluados el dia Martes: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Miercoles
 
 Bloque: 0
-Ingeniera de Software
-Electricidad y Magnetismo
 Proyecto en TICS 2
-Programacin
+Arquitectura de Software
+Estructura de Datos y Algoritmos
+Criptografa y Seguridad en Redes
 
 Bloque: 1
-lgebra Lineal
-Electivo Profesional
-Tecnologas Inalmbricas
-EDO
+Gestin Organizacional
+Clculo 1
+Sistemas Operativos
+Proyecto en TICs 1
 
 Bloque: 2
-Contabilidad y Costos
-Taller de Redes y Servicios
+Clculo 2
+Probabilidad y Estadsticas
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -73,20 +73,20 @@ Semestres evaluados el dia Miercoles: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Jueves
 
 Bloque: 0
-Clculo 2
-Arquitecturas Emergentes
-CFG
-Evaluacin de Proyectos TIC
+Seales y Sistemas
+Electivo Profesional
+Bases de Datos Avanzadas
+Comunicacin para la Ingeniera
 
 Bloque: 1
-Desarrollo Web y Mvil
-Electivo Profesional
-Comunicacin para la Ingeniera
-Bases de Datos Avanzadas
+lgebra Lineal
+Electrnica y Electrotecnia
+CFG
+Clculo 3
 
 Bloque: 2
-Calor y Ondas
-Seales y Sistemas
+Introduccin a la Economa
+Electivo Profesional
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
@@ -96,20 +96,20 @@ Semestres evaluados el dia Jueves: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 Viernes
 
 Bloque: 0
+Contabilidad y Costos
 Bases de Datos
-CFG
-Proyecto en TICs 1
-Arquitectura de Software
+Tecnologas Inalmbricas
+Electivo Profesional
 
 Bloque: 1
-Criptografa y Seguridad en Redes
-Gestin Organizacional
+EDO
+Ingeniera de Software
+Programacin Avanzada
 Electivo Profesional
-CFG
 
 Bloque: 2
-Química
-Clculo 3
+CFG
+Algebra y Geometría
 
 Bloque: 3
 ------------------------------------------------------------------------------------------------------------------------
